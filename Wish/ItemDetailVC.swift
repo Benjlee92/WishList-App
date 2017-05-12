@@ -29,31 +29,31 @@ class ItemDetailVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
             topItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
         }
         
-        let store = Store(context: context)
-        store.name = "Best Buy"
+//        let store = Store(context: context)
+//        store.name = "Best Buy"
+//        
+//        let store1 = Store(context: context)
+//        store1.name = "Amazon"
+//        
+//        let store2 = Store(context: context)
+//        store2.name = "Apple"
+//        
+//        let store3 = Store(context: context)
+//        store3.name = "Microsoft"
+//        
+//        let store4 = Store(context: context)
+//        store4.name = "ATT"
+//        
+//        let store5 = Store(context: context)
+//        store5.name = "Game Stop"
+//        
+//        let store6 = Store(context: context)
+//        store6.name = "Tesla"
+//        
+//        let store7 = Store(context: context)
+//        store7.name = "Fry's Electronics"
         
-        let store1 = Store(context: context)
-        store1.name = "Amazon"
-        
-        let store2 = Store(context: context)
-        store2.name = "Apple"
-        
-        let store3 = Store(context: context)
-        store3.name = "Microsoft"
-        
-        let store4 = Store(context: context)
-        store4.name = "ATT"
-        
-        let store5 = Store(context: context)
-        store5.name = "Game Stop"
-        
-        let store6 = Store(context: context)
-        store6.name = "Tesla"
-        
-        let store7 = Store(context: context)
-        store7.name = "Fry's Electronics"
-        
-        ad.saveContext()
+        //ad.saveContext()
         
         getStores()
     }
@@ -91,6 +91,25 @@ class ItemDetailVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
     
     @IBAction func savePressed(_ sender: UIButton) {
         
+        let item = Item(context: context)
+        
+        if let title = itemTitle.text {
+            item.title = title
+        }
+        
+        if let price = price.text {
+            item.price = Double(price)!
+        }
+        
+        if let details = details.text {
+            item.details = details
+        }
+        
+        item.toStore = stores[storePicker.selectedRow(inComponent: 0)]
+        
+        ad.saveContext()
+        
+        _ = navigationController?.popViewController(animated: true)
     }
 
 }

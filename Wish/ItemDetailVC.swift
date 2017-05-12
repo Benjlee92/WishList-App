@@ -18,6 +18,8 @@ class ItemDetailVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
     @IBOutlet weak var price: UITextField!
     
     var stores = [Store]()
+    var itemToEdit: Item?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,7 +57,14 @@ class ItemDetailVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
         
         //ad.saveContext()
         
+
+        
         getStores()
+        
+        if itemToEdit != nil {
+            
+            loadItemData()
+        }
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
@@ -91,7 +100,14 @@ class ItemDetailVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
     
     @IBAction func savePressed(_ sender: UIButton) {
         
-        let item = Item(context: context)
+        var item: Item!
+        
+        if itemToEdit == nil {
+            item = Item(context: context)
+            
+        } else {
+            item = itemToEdit
+        }
         
         if let title = itemTitle.text {
             item.title = title
@@ -110,6 +126,29 @@ class ItemDetailVC: UIViewController, UIPickerViewDataSource, UIPickerViewDelega
         ad.saveContext()
         
         _ = navigationController?.popViewController(animated: true)
+    }
+    
+    func loadItemData() {
+        if let item = itemToEdit {
+            itemTitle.text = item.title
+            price.text = String(item.price)
+            details.text = item.details
+            
+            if let store = item.toStore {
+                var index = 0
+                
+                repeat {
+                    
+                    let s = stores[index]
+                    if s.name == store.name {
+                        storePicker.selectRow(index, inComponent: 0, animated: false)
+                        break
+                    }
+                    
+                    index += 1
+                } while (index < stores.count)
+            }
+        }
     }
 
 }

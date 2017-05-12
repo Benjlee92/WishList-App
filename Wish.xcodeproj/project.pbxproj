@@ -11,8 +11,19 @@
 		B56E54631EC501EA00E8EFD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56E54621EC501EA00E8EFD0 /* ViewController.swift */; };
 		B56E54661EC501EA00E8EFD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B56E54641EC501EA00E8EFD0 /* Main.storyboard */; };
 		B56E54691EC501EA00E8EFD0 /* Wish.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B56E54671EC501EA00E8EFD0 /* Wish.xcdatamodeld */; };
-		B56E546B1EC501EA00E8EFD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B56E546A1EC501EA00E8EFD0 /* Assets.xcassets */; };
 		B56E546E1EC501EB00E8EFD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B56E546C1EC501EB00E8EFD0 /* LaunchScreen.storyboard */; };
+		B5795EB81EC50D5F001A3375 /* Cloud-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5795EB61EC50D5F001A3375 /* Cloud-Bold.otf */; };
+		B5795EB91EC50D5F001A3375 /* Cloud-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5795EB71EC50D5F001A3375 /* Cloud-Light.otf */; };
+		B5795EBE1EC50DB1001A3375 /* Octopus_100.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5795EBA1EC50DB1001A3375 /* Octopus_100.otf */; };
+		B5795EBF1EC50DB1001A3375 /* Octopus_300.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5795EBB1EC50DB1001A3375 /* Octopus_300.otf */; };
+		B5795EC01EC50DB1001A3375 /* Octopus_500.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5795EBC1EC50DB1001A3375 /* Octopus_500.otf */; };
+		B5795EC11EC50DB1001A3375 /* Octopus_700.otf in Resources */ = {isa = PBXBuildFile; fileRef = B5795EBD1EC50DB1001A3375 /* Octopus_700.otf */; };
+		B5795EC41EC50F80001A3375 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5795EC31EC50F80001A3375 /* MaterialView.swift */; };
+		B5795EC61EC52408001A3375 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5795EC51EC52408001A3375 /* ItemCell.swift */; };
+		B5A960F61EC64D2500E91D08 /* Assets 13-04-46-706.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5A960F51EC64D2500E91D08 /* Assets 13-04-46-706.xcassets */; };
+		B5A960F91EC6557700E91D08 /* ItemDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A960F81EC6557700E91D08 /* ItemDetailVC.swift */; };
+		B5E266A01EC507A3009A1EF5 /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E2669E1EC507A3009A1EF5 /* Item+CoreDataClass.swift */; };
+		B5E266A11EC507A3009A1EF5 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E2669F1EC507A3009A1EF5 /* Item+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,9 +32,20 @@
 		B56E54621EC501EA00E8EFD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B56E54651EC501EA00E8EFD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B56E54681EC501EA00E8EFD0 /* Wish.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Wish.xcdatamodel; sourceTree = "<group>"; };
-		B56E546A1EC501EA00E8EFD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B56E546D1EC501EB00E8EFD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B56E546F1EC501EB00E8EFD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5795EB61EC50D5F001A3375 /* Cloud-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cloud-Bold.otf"; sourceTree = "<group>"; };
+		B5795EB71EC50D5F001A3375 /* Cloud-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cloud-Light.otf"; sourceTree = "<group>"; };
+		B5795EBA1EC50DB1001A3375 /* Octopus_100.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octopus_100.otf; sourceTree = "<group>"; };
+		B5795EBB1EC50DB1001A3375 /* Octopus_300.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octopus_300.otf; sourceTree = "<group>"; };
+		B5795EBC1EC50DB1001A3375 /* Octopus_500.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octopus_500.otf; sourceTree = "<group>"; };
+		B5795EBD1EC50DB1001A3375 /* Octopus_700.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Octopus_700.otf; sourceTree = "<group>"; };
+		B5795EC31EC50F80001A3375 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		B5795EC51EC52408001A3375 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		B5A960F51EC64D2500E91D08 /* Assets 13-04-46-706.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets 13-04-46-706.xcassets"; sourceTree = "<group>"; };
+		B5A960F81EC6557700E91D08 /* ItemDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailVC.swift; sourceTree = "<group>"; };
+		B5E2669E1EC507A3009A1EF5 /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B5E2669F1EC507A3009A1EF5 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +78,66 @@
 		B56E545F1EC501EA00E8EFD0 /* Wish */ = {
 			isa = PBXGroup;
 			children = (
+				B5A960F21EC6470000E91D08 /* Controller */,
+				B5795EC21EC50F27001A3375 /* View */,
+				B5795EB51EC50D1E001A3375 /* Resources */,
+				B5E266A21EC507E8009A1EF5 /* Model */,
 				B56E54601EC501EA00E8EFD0 /* AppDelegate.swift */,
-				B56E54621EC501EA00E8EFD0 /* ViewController.swift */,
 				B56E54641EC501EA00E8EFD0 /* Main.storyboard */,
-				B56E546A1EC501EA00E8EFD0 /* Assets.xcassets */,
+				B5A960F51EC64D2500E91D08 /* Assets 13-04-46-706.xcassets */,
 				B56E546C1EC501EB00E8EFD0 /* LaunchScreen.storyboard */,
 				B56E546F1EC501EB00E8EFD0 /* Info.plist */,
 				B56E54671EC501EA00E8EFD0 /* Wish.xcdatamodeld */,
 			);
 			path = Wish;
+			sourceTree = "<group>";
+		};
+		B5795EB51EC50D1E001A3375 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B5795EBA1EC50DB1001A3375 /* Octopus_100.otf */,
+				B5795EBB1EC50DB1001A3375 /* Octopus_300.otf */,
+				B5795EBC1EC50DB1001A3375 /* Octopus_500.otf */,
+				B5795EBD1EC50DB1001A3375 /* Octopus_700.otf */,
+				B5795EB61EC50D5F001A3375 /* Cloud-Bold.otf */,
+				B5795EB71EC50D5F001A3375 /* Cloud-Light.otf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B5795EC21EC50F27001A3375 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B5795EC31EC50F80001A3375 /* MaterialView.swift */,
+				B5795EC51EC52408001A3375 /* ItemCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		B5A960F21EC6470000E91D08 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B56E54621EC501EA00E8EFD0 /* ViewController.swift */,
+				B5A960F81EC6557700E91D08 /* ItemDetailVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		B5E266A21EC507E8009A1EF5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B5E2669E1EC507A3009A1EF5 /* Item+CoreDataClass.swift */,
+				B5E266A31EC507F0009A1EF5 /* Generated */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B5E266A31EC507F0009A1EF5 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				B5E2669F1EC507A3009A1EF5 /* Item+CoreDataProperties.swift */,
+			);
+			name = Generated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,8 +200,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B56E546E1EC501EB00E8EFD0 /* LaunchScreen.storyboard in Resources */,
-				B56E546B1EC501EA00E8EFD0 /* Assets.xcassets in Resources */,
+				B5795EB91EC50D5F001A3375 /* Cloud-Light.otf in Resources */,
+				B5795EB81EC50D5F001A3375 /* Cloud-Bold.otf in Resources */,
 				B56E54661EC501EA00E8EFD0 /* Main.storyboard in Resources */,
+				B5795EC11EC50DB1001A3375 /* Octopus_700.otf in Resources */,
+				B5795EBE1EC50DB1001A3375 /* Octopus_100.otf in Resources */,
+				B5795EBF1EC50DB1001A3375 /* Octopus_300.otf in Resources */,
+				B5795EC01EC50DB1001A3375 /* Octopus_500.otf in Resources */,
+				B5A960F61EC64D2500E91D08 /* Assets 13-04-46-706.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +220,12 @@
 			files = (
 				B56E54691EC501EA00E8EFD0 /* Wish.xcdatamodeld in Sources */,
 				B56E54631EC501EA00E8EFD0 /* ViewController.swift in Sources */,
+				B5E266A01EC507A3009A1EF5 /* Item+CoreDataClass.swift in Sources */,
+				B5795EC41EC50F80001A3375 /* MaterialView.swift in Sources */,
+				B5795EC61EC52408001A3375 /* ItemCell.swift in Sources */,
 				B56E54611EC501EA00E8EFD0 /* AppDelegate.swift in Sources */,
+				B5A960F91EC6557700E91D08 /* ItemDetailVC.swift in Sources */,
+				B5E266A11EC507A3009A1EF5 /* Item+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +385,7 @@
 				B56E54741EC501EB00E8EFD0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

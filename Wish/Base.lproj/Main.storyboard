@@ -261,6 +261,16 @@
                                     <action selector="savePressed:" destination="3cQ-Q1-iuM" eventType="touchUpInside" id="rqL-zH-UFU"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ezg-Sq-RHY">
+                                <rect key="frame" x="16" y="84" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="PA5-QJ-NfO"/>
+                                    <constraint firstAttribute="width" constant="100" id="Pl2-1y-x20"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="addImage:" destination="3cQ-Q1-iuM" eventType="touchUpInside" id="xyK-DV-IM8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -272,11 +282,15 @@
                             <constraint firstItem="fVK-Ol-9zH" firstAttribute="trailing" secondItem="pHW-HK-zzJ" secondAttribute="trailingMargin" id="CXx-t7-Dgr"/>
                             <constraint firstItem="TnI-Ho-nBV" firstAttribute="leading" secondItem="pHW-HK-zzJ" secondAttribute="leadingMargin" id="EIe-Cm-yJ3"/>
                             <constraint firstItem="veH-vF-hil" firstAttribute="top" secondItem="fVK-Ol-9zH" secondAttribute="bottom" constant="20" id="ELB-hK-57s"/>
+                            <constraint firstItem="veH-vF-hil" firstAttribute="top" secondItem="Ezg-Sq-RHY" secondAttribute="bottom" constant="20" id="FL7-QX-T4f"/>
                             <constraint firstItem="fVK-Ol-9zH" firstAttribute="top" secondItem="jhG-Xn-plK" secondAttribute="bottom" constant="20" id="GSs-D0-3Mh"/>
                             <constraint firstItem="jhG-Xn-plK" firstAttribute="trailing" secondItem="pHW-HK-zzJ" secondAttribute="trailingMargin" id="GTI-d5-P59"/>
                             <constraint firstItem="jhG-Xn-plK" firstAttribute="leading" secondItem="TnI-Ho-nBV" secondAttribute="trailing" constant="8" id="MeZ-yQ-gc1"/>
                             <constraint firstItem="xKt-bM-tsW" firstAttribute="top" secondItem="9Pd-lc-RQH" secondAttribute="bottom" constant="18" id="RC3-b3-47n"/>
+                            <constraint firstItem="fVK-Ol-9zH" firstAttribute="leading" secondItem="Ezg-Sq-RHY" secondAttribute="trailing" constant="8" id="RCh-Y0-eLc"/>
+                            <constraint firstItem="Ezg-Sq-RHY" firstAttribute="top" secondItem="a8f-UI-Edc" secondAttribute="bottom" constant="20" id="Sk9-nB-DI9"/>
                             <constraint firstAttribute="trailingMargin" secondItem="xKt-bM-tsW" secondAttribute="trailing" constant="82" id="VgE-Qv-b2V"/>
+                            <constraint firstItem="Ezg-Sq-RHY" firstAttribute="leading" secondItem="pHW-HK-zzJ" secondAttribute="leadingMargin" id="XdZ-JF-fmS"/>
                             <constraint firstItem="iSr-sg-3h1" firstAttribute="leading" secondItem="pHW-HK-zzJ" secondAttribute="leadingMargin" id="ZcW-Fw-Efz"/>
                             <constraint firstItem="fVK-Ol-9zH" firstAttribute="leading" secondItem="TnI-Ho-nBV" secondAttribute="trailing" constant="8" id="dEX-9g-Rrs"/>
                             <constraint firstItem="veH-vF-hil" firstAttribute="trailing" secondItem="pHW-HK-zzJ" secondAttribute="trailingMargin" id="dc2-sM-hYY"/>
@@ -292,6 +306,9 @@
                     <navigationItem key="navigationItem" title="Add / Edit" id="NeP-zl-zJR">
                         <barButtonItem key="rightBarButtonItem" systemItem="trash" id="8bJ-Rg-U4a">
                             <color key="tintColor" red="0.25945395609999999" green="0.25945395609999999" blue="0.25945395609999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="deletePressed:" destination="3cQ-Q1-iuM" id="OJs-OJ-7Pp"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -299,6 +316,7 @@
                         <outlet property="itemTitle" destination="jhG-Xn-plK" id="IMj-8t-sbJ"/>
                         <outlet property="price" destination="fVK-Ol-9zH" id="dtq-l8-sUq"/>
                         <outlet property="storePicker" destination="9Pd-lc-RQH" id="oks-xp-Bxf"/>
+                        <outlet property="thumbImage" destination="TnI-Ho-nBV" id="eq1-1d-Gi7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W9W-O9-xWa" userLabel="First Responder" sceneMemberID="firstResponder"/>

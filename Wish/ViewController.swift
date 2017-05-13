@@ -14,14 +14,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var segment: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var cellView: UIView!
     var controller: NSFetchedResultsController<Item>!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         tableView.delegate = self
         tableView.dataSource = self
         //generateTestData()
         attemptFetch()
+        
         
     }
     

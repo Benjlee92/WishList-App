@@ -41,9 +41,6 @@
                                     <segment title="Title"/>
                                 </segments>
                                 <color key="tintColor" red="0.25945395609999999" green="0.25945395609999999" blue="0.25945395609999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="segmentChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="OMv-1t-0si"/>
-                                </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WOp-SH-QRK">
                                 <rect key="frame" x="16" y="108" width="343" height="559"/>
@@ -124,7 +121,7 @@
                                                         <constraint firstItem="41x-QM-Qbu" firstAttribute="leading" secondItem="aV7-D5-QvL" secondAttribute="trailing" constant="15" id="xYJ-iV-Uwl"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="NO"/>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                             </subviews>
@@ -270,9 +267,6 @@
                                     <constraint firstAttribute="height" constant="100" id="PA5-QJ-NfO"/>
                                     <constraint firstAttribute="width" constant="100" id="Pl2-1y-x20"/>
                                 </constraints>
-                                <connections>
-                                    <action selector="addImage:" destination="3cQ-Q1-iuM" eventType="touchUpInside" id="xyK-DV-IM8"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -319,7 +313,6 @@
                         <outlet property="itemTitle" destination="jhG-Xn-plK" id="IMj-8t-sbJ"/>
                         <outlet property="price" destination="fVK-Ol-9zH" id="dtq-l8-sUq"/>
                         <outlet property="storePicker" destination="9Pd-lc-RQH" id="oks-xp-Bxf"/>
-                        <outlet property="thumbImage" destination="TnI-Ho-nBV" id="eq1-1d-Gi7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W9W-O9-xWa" userLabel="First Responder" sceneMemberID="firstResponder"/>

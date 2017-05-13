@@ -11,6 +11,7 @@ import CoreData
 
 class ItemCell: UITableViewCell {
 
+
     @IBOutlet weak var thumb: UIImageView!
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var details: UILabel!
